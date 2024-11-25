@@ -1,4 +1,5 @@
 function isPalindrome(x: number): boolean {
+    if (x < 0 || (x % 10 === 0 && x !== 0)) return false;
     let xStr = `${x}`;
     let xStrHalfLength = Math.floor(xStr.length / 2);
     let xStrLength = xStr.length;
