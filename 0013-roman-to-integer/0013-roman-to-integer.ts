@@ -18,7 +18,6 @@ function romanToInt(s: string): number {
     let sArr = s.split("");
     for (let index = 0; index < sArr.length;)
         {
-            console.log(res);
             res += romanSympols[sArr[index]+sArr[index+1]] || romanSympols[sArr[index]] || 0;
             if (romanSympols[sArr[index]+sArr[index+1]]) index += 2;
             else index++;
