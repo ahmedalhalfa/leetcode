@@ -1,6 +1,5 @@
 function scoreOfString(s: string): number {
     return s.split("").reduce((acc, character, index) => {
-        console.log(acc);
         if (index === s.length - 1) return acc;
         return (Math.abs(getAscii(character) - getAscii(s[index+1]))) + acc
     }, 0);
